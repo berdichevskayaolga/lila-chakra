@@ -143,6 +143,66 @@
       .poe-blok2 {
         display: none !important;
       }
+
+      /* Контейнер игрового поля */
+      .div-online-game {
+        position: relative !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+
+      /* Контейнер с табами (игровое поле) */
+      .div-block {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 10px !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+      }
+
+      /* Табы (клетки поля) */
+      .tabs-2 {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      /* Меню табов (сетка игрового поля) */
+      .tabs-menu-3 {
+        width: 100% !important;
+        display: grid !important;
+        grid-template-columns: repeat(8, 1fr) !important;
+        gap: 2px !important;
+        padding: 0 !important;
+      }
+
+      /* Отдельные клетки поля */
+      .tab-link {
+        width: 100% !important;
+        aspect-ratio: 1 / 1 !important;
+        padding: 5px !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+      }
+
+      /* Текст номера в клетке */
+      .tab-link .text-block {
+        font-size: 14px !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .tabs-menu-3 {
+        gap: 1px !important;
+      }
+
+      .tab-link {
+        padding: 3px !important;
+      }
+
+      .tab-link .text-block {
+        font-size: 12px !important;
+      }
     }
   </style>
 </head>
